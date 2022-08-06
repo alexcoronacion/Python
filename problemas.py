@@ -1,12 +1,34 @@
+def add(x,y):
+    return x+y
+def do_twice(func,x,y):
+    return func(func(x,y),func(x,y))
 
-import matplotlib
-print(matplotlib.__version__)
+a=5
+b=10
+print(do_twice(add,a,b))
 
-import matplotlib.pyplot as plt
-import numpy as np
+import random
+for i in range(5):
+    value=random.randint(1,6)
+    print(value)
 
-xpoints=np.array([0,6])
-ypoints=np.array([0,250])
+from math import pi
+print(pi)
 
-plt.plot(xpoints,ypoints)
-plt.show()
+def func(x):
+  res = 0
+  for i in range(x):
+     res += i
+  return res
+
+print(func(4))
+
+celsius = int(input())
+
+def conv(c):
+    #your code goes here
+    return (9/5)*c+32
+
+fahrenheit = conv(celsius)
+print(fahrenheit)
+print("7" + 4)
