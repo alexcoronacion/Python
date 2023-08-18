@@ -1,15 +1,8 @@
 class Person:
-    def __init__(self,fname,lname):
-        self.firstname=fname
-        self.lastname=lname
-    def printname(self):
-        print(self.firstname,self.lastname)
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+p1=Person("Christian Alexander",39)
+print(p1.name)
+print(p1.age)
 
-class Student(Person):
-    def __init__(self,fname,lname,year):
-        super().__init__(fname,lname)
-        self.graduationyear=year
-
-x=Student("Mike","Olsen",2019)
-x.printname()
-print(x.graduationyear)
